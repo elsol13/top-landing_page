@@ -1,0 +1,21 @@
+
+:root {
+    --h: 18.3; 
+    --s: 78.4%;
+    --l: 46.3%;
+    --a: 1;
+
+    --color-primary: hsla(var(--h), var(--s), var(--l), var(--a));
+    --color-primary-lighter: hsla(var(--h), var(--s), calc(var(--l) + 5%), var(--a));
+    --color-primary-lightest: hsla(var(--h), var(--s), calc(var(--l) + 15%), var(--a));
+    --color-primary-darker: hsla(var(--h), var(--s), calc(var(--l) - 5%), var(--a));
+    --color-primary-darkest: hsla(var(--h), var(--s), calc(var(--l) - 15%), var(--a));
+
+    --h-secondary: calc(var(--h) + 180); 
+    --color-secondary: hsla(var(--h-secondary), var(--s), var(--l), var(--a));
+    --color-secondary-lighter: hsla(var(--h-secondary), var(--s), calc(var(--l) + 5%), var(--a));
+    --color-secondary-lightest: hsla(var(--h-secondary), var(--s), calc(var(--l) + 15%), var(--a));
+    --color-secondary-darker: hsla(var(--h-secondary), var(--s), calc(var(--l) - 5%), var(--a));
+    --color-secondary-darkest: hsla(var(--h-secondary), var(--s), calc(var(--l) - 15%), var(--a));
+}
+

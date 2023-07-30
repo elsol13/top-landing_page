@@ -1,0 +1,118 @@
+/* Input Styles */
+input {
+    padding: .4rem .8rem;
+    font-size: .9em;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-right: .5em;
+}
+
+/* Button Styles */
+.button {
+    background-color: var(--color-primary);
+    padding: 10px 15px;
+    font-size: .9em;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Fixed the border property */
+}
+
+.button:hover {
+    background-color: var(--color-secondary-darkest);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Container Info */
+.container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin: 3em 0em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Button Icon */
+.button-icon {
+    display: flex;
+    flex-direction: row; /* Fixed the 'direction' to 'flex-direction' */
+    align-items: center;
+    justify-content: center;
+    gap: .4em;
+    font-size: .8em;
+    width: 70%;
+}
+
+/* SVG Images */
+img.svg {
+    width: 1em;
+}
+
+/* Card Styles */
+.card {
+    width: 150px;
+}
+
+/* Movie Poster */
+.movie-poster {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image Transitions */
+img.card-img:hover {
+    transition: 0.3s ease-in-out;
+}
+
+/* General Image Styling */
+img {
+    border-radius: 15px;
+    max-width: 100vw;
+}
+
+.trending-poster {
+    max-width: 250px;
+}
+
+/* Overlay within Movie Poster */
+.movie-poster .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Card Hover Effects */
+.card:hover img {
+    opacity: 1;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* Card, Card Image, Movie Poster, Overlay */
+.card, .card-img, .movie-poster, .overlay {
+    box-sizing: border-box;
+    height: 300px;
+    width: auto;
+    background-size: cover;
+}
